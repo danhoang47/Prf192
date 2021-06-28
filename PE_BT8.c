@@ -1,3 +1,21 @@
+/*
+c8
+Given integer N. Check that N is power of 2.
+if exist x that 2^x=N print x.
+Otherwise Print "N is not power of 2".
+
+Examples
+input
+8
+output
+3
+input
+6
+output
+6 is not a power of 2
+*/
+*/
+
 #include <stdio.h>
 #include <math.h>
 
