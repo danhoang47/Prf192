@@ -38,10 +38,18 @@ void check(int a[], int size){
         diff = a[i]/10 - a[i]%10;
         if ( min > diff ){
             min = diff;
-            index = i;
         }
     }
-    printf("%d %d",a[index]%10 + 1, a[index]/10 + 1);
+    for ( int i = 0; i < size; i++){
+        if ( a[i]/10 - a[i]%10 == min){
+            printf("%d %d",a[i]%10 + 1, a[i]/10 + 1);
+            printf("\n");
+        }
+    }
+}
+void print(int c[], int size){
+    for ( int i = 0; i < size; i++)
+        printf("%d ", c[i]);
 }
 int main(){
     int size, x;
@@ -56,3 +64,5 @@ int main(){
     else 
         check(c,nC);
 }
+
+
