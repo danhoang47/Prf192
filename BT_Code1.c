@@ -4,9 +4,8 @@ int main()
 {
    float part, middle, final;
    char c;
-   printf("Parti point: ");   scanf("%f", &part);
-   printf("\nMiddle point: "); scanf("%f", &middle);
-   printf("\nFinal point: "); scanf("%f", &final);
+   scanf("%f%f%f", &part, &middle, &final);
+   
    float avg = part*0.1+ middle*0.3 + final*0.6;
    if ( avg >= 8.5 && avg <= 10.0)
       c = 'A';
